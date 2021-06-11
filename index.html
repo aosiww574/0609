@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+
+
+<body>
+
+    <div class="header bw">
+        <img src="./image/logo.png" alt="">
+    </div>
+
+    <div class="part1 bw">
+        <h2>H2標題</h2>
+        <div class="speedWrapper fdr">
+            <div class="speed fdr">
+
+                <div class="speedId fdr">
+                    <span class="fdr" id="infoSpeed1-x"></span>
+                </div>
+                <div class="speedInfo">
+                    <!-- <span>google.com</span> -->
+                    <span>SVA398.com</span>
+                    <span><strong id="infoSpeed1"></strong> ms</span>
+
+                </div>
+                <a href="#">
+                    <div class="speed-link">
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </div>
+                </a>
+
+            </div>
+            <div class="speed fdr">
+
+                <div class="speedId fdr">
+                    <span class="fdr" id="infoSpeed2-x"></span>
+                </div>
+                <div class="speedInfo">
+                    <!-- <span>yahoo.com</span> -->
+                    <span>svm398.com</span>
+                    <span><strong id="infoSpeed2"></strong> ms</span>
+                </div>
+                <a href="#">
+                    <div class="speed-link">
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </div>
+                </a>
+
+            </div>
+            <div class="speed fdr">
+
+                <div class="speedId fdr">
+                    <span class="fdr" id="infoSpeed3-x"></span>
+                </div>
+                <div class="speedInfo">
+                    <!-- <span>github.com</span> -->
+                    <span>ssv398.com</span>
+                    <span><strong id="infoSpeed3"></strong> ms</span>
+                </div>
+                <a href="#">
+                    <div class="speed-link">
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </div>
+                </a>
+
+            </div>
+            <div class="speed fdr">
+
+                <div class="speedId fdr">
+                    <span class="fdr" id="infoSpeed4-x"></span>
+                </div>
+                <div class="speedInfo">
+                    <!-- <span>youtube.com</span> -->
+                    <span>svv398.com</span>
+                    <span><strong id="infoSpeed4"></strong> ms</span>
+                </div>
+                <a href="#">
+                    <div class="speed-link">
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </div>
+                </a>
+
+            </div>
+            <div class="speed fdr">
+
+                <div class="speedId fdr">
+                    <span class="fdr" id="infoSpeed5-x"></span>
+                </div>
+                <div class="speedInfo">
+                    <!-- <span>w3schools.com</span> -->
+                    <span>sve398.com</span>
+                    <span><strong id="infoSpeed5"></strong> ms</span>
+                </div>
+                <a href="#">
+                    <div class="speed-link">
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </div>
+                </a>
+
+            </div>
+            <div class="speed fdr">
+
+                <div class="speedId fdr">
+                    <span class="fdr" id="infoSpeed6-x"></span>
+                </div>
+                <div class="speedInfo">
+                    <span>svc398.com</span>
+                    <span><strong id="infoSpeed6"></strong> ms</span>
+                </div>
+                <a href="#">
+                    <div class="speed-link">
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer bw fdr">
+        <div class="qr">QRCODE</div>
+        <div class="text">TEXT</div>
+        <div class="img">IMG</div>
+    </div>
+
+</body>
+<script src="./js/ping.js"></script>
+<script>
+    var p = new Ping();
+    var x = 1;
+
+    // p.ping("http://google.com", function (err, data) {
+    p.ping("http://SVA398.com", function (err, data) {
+        // data = data;
+        document.getElementById("infoSpeed1").innerHTML = data;
+        document.getElementById("infoSpeed1-x").innerHTML = x;
+        document.getElementsByClassName("speed")[0].style.order = x;
+        x++
+    });
+    // p.ping("https://tw.yahoo.com", function (err, data) {
+    p.ping("https://svm398.com", function (err, data) {
+        // data = data;
+        document.getElementById("infoSpeed2").innerHTML = data;
+        document.getElementById("infoSpeed2-x").innerHTML = x;
+        document.getElementsByClassName("speed")[1].style.order = x;
+        x++
+    });
+    // p.ping("http://github.com", function (err, data) {
+    p.ping("ssv398.com", function (err, data) {
+        // data = data;
+        document.getElementById("infoSpeed3").innerHTML = data;
+        document.getElementById("infoSpeed3-x").innerHTML = x;
+        document.getElementsByClassName("speed")[2].style.order = x;
+        x++
+    });
+
+    // 4
+    // p.ping("https://www.youtube.com/", function (err, data) {
+    p.ping("https://svv398.com", function (err, data) {
+        // data = data;
+        document.getElementById("infoSpeed4").innerHTML = data;
+        document.getElementById("infoSpeed4-x").innerHTML = x;
+        document.getElementsByClassName("speed")[3].style.order = x;
+        x++
+    });
+    // p.ping("https://www.w3schools.com/", function (err, data) {
+    p.ping("https://sve398.com", function (err, data) {
+        // data = data;
+        document.getElementById("infoSpeed5").innerHTML = data;
+        document.getElementById("infoSpeed5-x").innerHTML = x;
+        document.getElementsByClassName("speed")[4].style.order = x;
+        x++
+    });
+    // p.ping("https://juejin.cn/post/6844903901355835406", function (err, data) {
+    p.ping("https://svc398.com", function (err, data) {
+        // data = data;
+        document.getElementById("infoSpeed6").innerHTML = data;
+        document.getElementById("infoSpeed6-x").innerHTML = x;
+        document.getElementsByClassName("speed")[5].style.order = x;
+        x++
+    });
+</script>
+
+</html>

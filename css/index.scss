@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(../image/bg.png);
+}
+
+.bw {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fdr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+}
+
+.part1 {
+    h2 {
+        background-color: #2ea7e0;
+        text-align: center;
+        line-height: 1.5;
+        border-radius: 8px;
+        font-weight: 400;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .speedWrapper {
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, .2);
+        border-radius: 8px;
+        width: 100%;
+        // height: 60px;
+        justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .speed {
+        width: 30%;
+        min-width: 250px;
+        max-width: 350px;
+        background-color: rgba($color: #fff, $alpha: .6);
+        border-radius: 50px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        order: 6;
+
+
+        .speedId {
+            // background: linear-gradient(to bottom, #ff7c02 0%, #ff860d 47%, #ffcb52 100%);
+            // background: linear-gradient(-45deg, #3363a8 0%,  #2ea7e0 100%);
+            // background: linear-gradient(-45deg, #321f9e 0%, #2ea7e0 100%);
+            background: linear-gradient(-45deg, #2960ac 0%, #addef8 100%);
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            animation: move 4s linear infinite;
+            // margin-left: 10px;
+
+            span {
+                font-size: 10px;
+                width: 85%;
+                height: 85%;
+                border-radius: 50%;
+                background: #fff;
+                font-size: 2rem;
+                color: #121212;
+                animation: move2 4s linear infinite;
+            }
+        }
+
+        .speedInfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0 10px;
+            text-align: center;
+
+            span:nth-of-type(2) {
+                font-size: 1.2em;
+            }
+
+            strong {
+                font-size: 24px;
+            }
+        }
+
+        .speed-link {
+            color: #2ea7e0;
+            font-size: 2em;
+            margin-right: 10px;
+        }
+    }
+
+}
+
+.footer {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, .2);
+    justify-content: center;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+
+@keyframes move2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+
+    }
+}
