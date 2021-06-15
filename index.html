@@ -128,9 +128,12 @@
         </div>
 
         <div class="titleText bw">VIDEO HƯỚNG DẪN CHO THÀNH VIÊN MỚI </div>
-        <button>A</button>
-        <button>B</button>
-        <div class="part2 part bw fdr">
+        <div class="bw">
+            <button class="switchButton" @click="isAActive=true" :class="{color:isAActive}">Giao diện PC/Laptop</button>
+            <button class="switchButton" @click="isAActive=false" :class="{color:!isAActive}">Giao diện Mobile</button>
+        </div>
+
+        <div class="part2 part bw fdr" v-show="isAActive">
             <div class="videoWrapper">
                 <h3>Hướng dẫn đăng ký</h3>
                 <div class="videoLink">
@@ -169,6 +172,27 @@
             </div>
         </div>
 
+        <div class="part2 part bw fdr" v-show="!isAActive">
+            <div class="videoWrapper">
+                <h3>Hướng dẫn đăng ký</h3>
+                <div class="videoLink">
+                    <img src="./image/img1.png" alt="">
+                </div>
+            </div>
+            <div class="videoWrapper">
+                <h3>Hướng dẫn nạp tiền trực tuyến 1</h3>
+                <div class="videoLink">
+                    <img src="./image/img1.png" alt="">
+                </div>
+            </div>
+            <div class="videoWrapper">
+                <h3>Hướng dẫn nạp tiền trực tuyến 2</h3>
+                <div class="videoLink">
+                    <img src="./image/img1.png" alt="">
+                </div>
+            </div>
+        </div>
+
         <div class="part3 part bw fdr">
             <div class="qr"><img src="./image/qr.jpg" alt=""></div>
             <div class="text">
@@ -183,15 +207,13 @@
 </body>
 <script src="./js/ping.js"></script>
 <script src="./js/vue2.js"></script>
+<!-- <script src="./js/vue2-d.js"></script> -->
 <script>
     new Vue({
-        el: 'all',
-        data() {
-
+        el: '#all',
+        data: {
+            isAActive: true
         },
-        methods() {
-
-        }
     })
 
     var p = new Ping();

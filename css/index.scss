@@ -144,12 +144,15 @@ body {
 .part2 {
     flex-wrap: wrap;
     justify-content: space-around;
-
+    align-content: flex-end;
+    align-items: stretch;
 }
 
 .videoWrapper {
+    min-width: 220px;
     width: 30%;
     text-align: center;
+    align-self: flex-end;
 
     h3 {
         font-size: 1.2rem;
@@ -172,9 +175,13 @@ body {
 
 .part3 {
     justify-content: space-around;
+    // justify-content: center;
+    flex-wrap: wrap;
 
     .qr {
+        min-width: 150px;
         width: 25%;
+        margin: 15px auto;
 
         img {
             width: 150px;
@@ -184,20 +191,39 @@ body {
     }
 
     .text {
+        min-width: 220px;
         width: 30%;
         line-height: 1.5;
-        img{
+        margin: 10px;
+
+
+        img {
             width: 50%;
         }
     }
 
     .img {
+        min-width: 220px;
         width: 25%;
-
+        margin: 0 auto;
         img {
             width: 100%;
         }
     }
+}
+
+.switchButton {
+    padding: 7px 15px;
+    border-radius: 5px;
+    line-height: 24px;
+    border: none;
+    margin-right: 10px;
+    background-color: #22272B;
+    background-color: #aaa;
+}
+
+.color {
+    background-color: #CE2323;
 }
 
 @keyframes move {
