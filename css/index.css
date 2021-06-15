@@ -28,6 +28,10 @@ body {
           align-items: center;
 }
 
+.header {
+  padding-top: 16px;
+}
+
 .header img {
   display: block;
   margin: 0 auto;
