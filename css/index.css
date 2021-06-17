@@ -28,13 +28,29 @@ body {
           align-items: center;
 }
 
+.first {
+  background-color: #343a40;
+  border-radius: 5px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.first a {
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
 .header {
   padding-top: 16px;
 }
 
 .header img {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto 30px;
   width: 300px;
 }
 
@@ -171,27 +187,28 @@ body {
           align-items: stretch;
 }
 
-.videoWrapper {
+.part2 a {
   min-width: 220px;
   width: 30%;
   text-align: center;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  text-decoration: none;
 }
 
-.videoWrapper h3 {
+.part2 a .videoWrapper h3 {
   font-size: 1.2rem;
   line-height: 1.2;
 }
 
-.videoWrapper .videoLink {
+.part2 a .videoWrapper .videoLink {
   position: relative;
   width: 100%;
   border-radius: 20px;
   margin: 15px auto;
 }
 
-.videoWrapper .videoLink img {
+.part2 a .videoWrapper .videoLink img {
   border-radius: 20px;
   width: 100%;
   vertical-align: bottom;
