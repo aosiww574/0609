@@ -214,9 +214,14 @@ body {
         line-height: 1.5;
         margin: 10px;
 
+        .dfa {
+            margin-top: 20px;
+        }
 
         img {
-            width: 50%;
+            // width: 50%;
+            width: 175px;
+            margin-top: 20px;
         }
     }
 

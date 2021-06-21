@@ -240,8 +240,13 @@ body {
   margin: 10px;
 }
 
+.part3 .text .dfa {
+  margin-top: 20px;
+}
+
 .part3 .text img {
-  width: 50%;
+  width: 175px;
+  margin-top: 20px;
 }
 
 .part3 .img {
